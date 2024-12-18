@@ -1,15 +1,27 @@
 #!/bin/python3
 
+import time
+
 menu = "Black coffee, Cappucino, Latte, Espresso"
 
-print ("Hello stranger\n" + "Welcome to our Coffee shop!\n")
+print("Hello stranger\n" + "Welcome to our Coffee shop!\n")
 
-name = input ("What is your name? ")
+name = input("What is your name?\n")
 
-print ("\nHello " + name + " nice to see you here!")
+print("\nHello " + name + " nice to see you here!")
 
-print ("\nHey " + name + " what would you like? Here is our menu: " + menu + ". Anything you like?\n")
+time.sleep(1)
+
+print(
+    "\nHey "
+    + name
+    + " what would you like?\n"
+    + "Here is our menu: "
+    + menu
+    + "."
+    + "\nAnything you like?\n"
+)
 
 order = input()
 
-print ("\nThank you " + name + " and enjoy your " + order + "!")
+print("\nThank you " + name + " and enjoy your " + order + "!")
