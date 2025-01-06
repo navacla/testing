@@ -2,11 +2,11 @@
 
 import time
 
-menu = "Black coffee, Cappucino, Latte, Espresso"
+menu = "Black coffee, Cappuccino, Latte, Espresso"
 
 print("Hello stranger\n" + "Welcome to our Coffee shop!\n")
 
-name = input("What is your name?\n")
+name = input("What is your name? ").capitalize()
 
 print("\nHello " + name + " nice to see you here!")
 
