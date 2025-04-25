@@ -3,7 +3,7 @@
 import time
 
 # Coffee menu as a list
-menu = ["Black coffee", "Cappuccino", "Latte", "Espresso"]
+menu = ["black coffee", "cappuccino", "latte", "espresso"]
 
 print("Hello stranger\nWelcome to our Coffee shop!\n")
 
@@ -17,13 +17,16 @@ time.sleep(1)
 # Display the menu and take the user's order
 print(f"\nHey {name}, what would you like? Here is our menu: {', '.join(menu)}.\n")
 
-order = input().capitalize()
+order = input().lower()
 
 # Keep asking until the user provides a valid menu item
 while True:
-    order = input().capitalize()
+    order = input().lower()
     if order in menu:
         print(f"\nThank you {name}, and enjoy your {order}!")
+        break  # Exit the loop if the input is valid
+    elif order == "fuck you":
+        print(f"\nWell fuck you too {name}!")
         break  # Exit the loop if the input is valid
     else:
         print(

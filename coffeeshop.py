@@ -23,3 +23,5 @@ print(
 )
 
 order = input()
+
+print("\nThank you " + name + " and enjoy your " + order + "!")
