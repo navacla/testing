@@ -22,7 +22,7 @@ order = input().lower()
 # Keep asking until the user provides a valid menu item
 while True:
     order = input().lower()
-    if order in menu:
+    if order is menu:
         print(f"\nThank you {name}, and enjoy your {order}!")
         break  # Exit the loop if the input is valid
     elif order == "fuck you":
