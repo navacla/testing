@@ -26,3 +26,4 @@ else:
     print("Invalid command. Please enter 1 or 2.")
 
 # The code above is a simple Python program that defines two functions: ask_name and calculate_expences.
+
